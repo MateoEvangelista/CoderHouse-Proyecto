@@ -1,0 +1,471 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+input:focus{
+    outline: none;
+}
+nav ul{
+    margin: 15px;
+    padding: 0px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+h1{
+    font-family: Courier;
+    margin: 40%;
+    height: 40%;
+    text-align: center;
+    padding: 2%;
+
+}
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.header{
+    grid-area: header;
+    display: flex;
+    color: black;
+    height: 100%;
+    background-color: white;
+}
+.header img{
+    margin: 0% 1% 0% 1%;
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 50px;
+}
+.header h2{
+    margin: 1%;
+    display: inline;
+}
+
+.header nav{
+    margin: 0% 0% 0% 14%;
+}
+.header input{
+    background-color: #FEF5ED;
+    border-radius: 5px;
+    height: 45%;
+    width: 30%;
+    margin: 1% 0% 0% 10%;
+}
+.main{
+    grid-area: main;
+    color: black;
+    height: auto;
+    background-color: grey;
+    padding-top: 1%;
+}
+.main h1{
+    color: #CFCCCC;
+    background-color: #383434;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    margin: 4% 20% 5% 20%;
+    border-radius: 15px;
+}
+
+.main__sobre{
+    display: flex;
+    text-align: center;
+    font-family: Courier;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    color: black;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+.footer p{
+    margin: 2% 0% 0% 1%;
+}
+.footer img{
+    margin: 0 15px;
+    height: auto;
+    width: auto;
+    max-width: 80px;
+    max-height: 35px;
+}
+.footer__link{
+    margin: 1% 0% 1% 50%;
+}
+.slider{
+    width: 1250px;
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate;
+    width: 400%;
+    position: relative;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    max-width: 1250px;
+    margin-bottom: 0px;
+}
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+.productos-index{
+    display: flex;
+    text-align: center;
+    padding-bottom: 10%;
+}
+.Productos_populares{
+    font-family: Courier;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin-left: 200px;
+    border-radius: 10%;
+}
+.Productos_populares img{
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 90px;
+}
+.Accesorios_juegos{
+    font-family: Courier;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin: 0px 100px 0px 100px;
+    border-radius: 10%;
+}
+.Accesorios_juegos img{
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 90px;
+}
+.Ofertas{
+    font-family: Courier;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin: 0px;
+    border-radius: 10%;
+}
+.Ofertas img{
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 90px;
+}
+
+/*Comprar*/
+   
+.body-comprar{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside search search"
+    "aside main main"
+    "footer footer footer";
+}
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-left: 2%;
+    
+}
+.aside p{
+    border: black;
+    border-width: 10px;
+}
+.productos{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    margin-left: 200px;
+}
+.productos img{
+    grid-area: img;
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 1%;
+}
+.productos div {
+    display: grid;
+    grid-template-areas: 
+    "img producto producto" 
+    "img precio carrito";
+    background-color: #EEEBDD;
+    margin: 10px;
+    width: 800px;
+    border-radius: 10px;
+}
+.productos div h3{
+    grid-area: producto;
+    display: flex;
+    margin-right: 150px;
+}
+.productos div div{
+    grid-area: carrito;
+    display: flex;
+    margin-right: 150px;
+    background-color: red;
+    width: 140px;
+    height: 50px;
+}
+.productos div div p{
+    grid-area: carrito;
+    margin-left: 10%;
+}
+.precio div p{
+    grid-area: precio;
+}
+
+/*Contactanos*/
+
+.body-contactanos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.main_contactanos{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 535px;      /*ver como hacerlo para que sea mas lindo visualmente (contactanos y cuenta)*/
+}
+.main_contactanos input{
+    height: 25px;
+    width: 400px;
+    margin: 15px;
+}
+.main_contactanos h3{
+    font-size: 110%;
+    margin-right: 800px;
+    margin-bottom: 100px;
+}
+
+/*carrito*/
+
+.body-carrito{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.main-carrito{
+    grid-area: main;
+    display: flex;
+}
+.main-carrito div{
+    background-color: #EEEBDD;
+    height: 500px;
+    width: 500px;
+    margin: 10px 20px 25px 120px;
+    border-radius: 15px;
+    text-align: center;
+}
+.main-carrito div li{
+    list-style: none;
+}
+
+
+/*cuenta*/
+
+.body_cuenta{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.main_cuenta form{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                
+    height: 468px;
+}
+.main_cuenta form input{
+    height: 25px;
+    width: 400px;
+    margin: 15px;
+}
+.main_cuenta h2{
+    text-align: center;
+}
+
+
+/* mobile*/
+
+@media only screen and (max-width: 640px){
+
+    .header input{
+        display: none;
+    }
+    .header nav{
+        font-size: 80%;
+        margin-left: 19%;
+    }
+    .header h2{
+        margin-top: 2%;
+    }
+    .main div{
+        width: 640px;
+    }
+    .main h1{
+        margin: 1% 1% 1% 1%;
+        text-align: left;
+        font-size: 130%;
+    }
+    .slider{
+        height: 200px;
+    }
+    .slider ul{
+        width: 400%;
+    }
+    .slider img{
+        max-height: 200px;
+    }
+    .footer p{
+        display: none;
+    }
+    .footer__link{
+        margin-left: 30%;
+    }
+    .productos-index{
+        font-size: 80%;
+        margin-top: 50px;
+    }
+    .productos-index div{
+        height: 180px;
+        max-width: 400%;
+        margin: 40px;
+    }
+    .productos-index div img{
+        max-height: 45px;
+    }
+
+    /*Comprar*/
+
+    .aside{
+        width: 200%;
+    }
+    .aside p{
+        font-size: 80%;
+    }
+    .productos{
+        margin-left: 62px;
+    }
+    .productos div{
+        width: 75%;
+    }
+    .productos img{
+        max-height: 100px;
+        align-content: center;
+        margin: 10px;
+    }
+    .productos div h3{
+        margin-left: 30%;
+        margin-right: 0px;
+        font-size: 100%;
+    }
+    .productos div div{
+        margin-left: 15%;
+        font-size: 90%;
+        height: 40px;
+        width: 120px;
+    }
+    .productos div p{
+        margin-left: 30%;
+        font-size: 90%;
+    }
+
+    /*contactanos*/
+
+    .main_contactanos{                              /*hacerlo mas lindo visualmente (contactanos y cuenta), faltan imagenes a decidir. hacer antes del 14/12*/
+        height: 528px;    
+    }
+    .main_contactanos input{
+        width: 300px;
+    }
+    .main_contactanos h3{
+        margin: 15px 0px 80px 0px;
+    }
+
+    /*carrito*/
+
+    .main-carrito{
+        height: 536px;
+    }
+    .main-carrito div{
+        background-color: #EEEBDD;
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        border-radius: 15px;
+        margin: 40px 10px 25px 10px;
+    }
+
+
+    /*cuenta*/
+
+    .main_cuenta form{
+        margin-top: 100px;
+        height: 380px;
+    }
+
+}
