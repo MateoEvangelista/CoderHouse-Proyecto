@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Estilos.css">
     <title>Mi cuenta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
     <body class="body_cuenta">
-        <header class="header">
-            <img src="../Fotos/Logo.png">
-            <h2>Xslice</h2>
-            <input type="text" placeholder="Buscador">
-                <nav class="header__menu">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a> </li>
-                        <li><a href="./Comprar.html">Comprar</a></li>
-                        <li><a href="./Contactanos.html">Contactanos</a> </li>
-                        <li><a href="./Carrito.html">Carrito</a></li>
-                        <li><a href="./Cuenta.html">Cuenta</a> </li>
-                    </ul>
-                </nav>
+        <header class="container" style="background-color: aqua;">
+            <img src="./Fotos/Logo.png" class="rounded float-left" style="height: 5%; width: 4%;">
+            <h2 class="float-left">Xslice</h2>
+            
+            <input type="text" placeholder="Buscador" style="margin: 1% 1% 0% 4%; width: 30%;">
+            <span class="input-group-btn" type="button">
+    
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrito.html">Carrito</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./cuenta.html">Cuenta</a>
+                      </li>
+                </ul> 
+    
         </header>
         <main class="main_cuenta">
             <h2>Ingresa tus datos</h2>
@@ -32,13 +45,14 @@
             </form>
         </main>
     </body>
-<footer class="footer">
-    <p>XSLICE. © 2021. Todos los derechos reservados</p>
-    <div class="footer__link">
-        <img src="../Fotos/whatsapp.png"></a>
-        <img src="../Fotos/instagram.png"></a>
-        <img src="../Fotos/gorjeo.png"></a>
-        <img src="../Fotos/correo-abierto.png"></a>
-    </div>  
-</footer>
+    <footer class="container" style="background-color: aqua;">
+        <p class="float-left" style="margin-top: 2%;">XSLICE. © 2021. Todos los derechos reservados</p>
+        <div class="input-group-btn">
+            <img src="./Fotos/whatsapp.png" style="width: 5%; margin: 1% 0% 1% 30%;"></a>
+            <img src="./Fotos/instagram.png" style="width: 5%; margin-left: 1%;"></a>
+            <img src="./Fotos/gorjeo.png" style="width: 5%; margin-left: 1%;"></a>
+            <img src="./Fotos/correo-abierto.png" style="width: 5%; margin-left: 1%;"></a>
+        </div>
+    </footer>
+</body>
 </html>
